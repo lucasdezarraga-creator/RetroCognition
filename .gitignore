@@ -1,0 +1,34 @@
+# ====================================================================
+# 1. RUST / CARGO DEPENDENCIES
+# ====================================================================
+# Ignores the heavy target/ folder where Rust compiles binaries
+**/target/
+
+# ====================================================================
+# 2. PYTHON VIRTUAL ENVIRONMENTS & CACHE
+# ====================================================================
+# Ignores bytecode and local virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+
+# ====================================================================
+# 3. DATABASE FILES (IMPORTANT)
+# ====================================================================
+# You do NOT want to commit your actual personal history database to GitHub!
+*.db
+*.sqlite
+*.sqlite3
+
+# ====================================================================
+# 4. OS & IDE JUNK
+# ====================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
